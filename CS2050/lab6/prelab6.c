@@ -29,12 +29,12 @@ int main(void) {
     node* start  = NULL;
     node* second = insert_at_head(start, 2);
 	node* third = insert_at_head(second, 3);
-    //assert(second->data == 2);
-    //assert(second->next == start);
+    assert(second->data == 2);
+    assert(second->next == start);
 
     
-    //assert(third->data == 3);
-    //assert(third->next == second);
+    assert(third->data == 3);
+    assert(third->next == second);
 
     free(third);
     free(second);
